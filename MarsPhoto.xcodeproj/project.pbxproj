@@ -7,18 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4828AE5C2C08DA83000A38E9 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE5B2C08DA83000A38E9 /* ErrorView.swift */; };
+		4828AE5F2C08E295000A38E9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE5E2C08E295000A38E9 /* LoadingView.swift */; };
+		4828AE622C08E81C000A38E9 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE612C08E81C000A38E9 /* EmptyView.swift */; };
+		4828AE682C08EDBF000A38E9 /* FullScreenImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE672C08EDBF000A38E9 /* FullScreenImage.swift */; };
+		4828AE6B2C091F84000A38E9 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4828AE6A2C091F84000A38E9 /* SF-Pro.ttf */; };
+		4828AE6E2C09234D000A38E9 /* Font+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE6D2C09234D000A38E9 /* Font+Ext.swift */; };
 		487B5E0D2C0736580029EF25 /* MarsPhotoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E0C2C0736580029EF25 /* MarsPhotoApp.swift */; };
-		487B5E0F2C0736580029EF25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E0E2C0736580029EF25 /* ContentView.swift */; };
+		487B5E0F2C0736580029EF25 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E0E2C0736580029EF25 /* MainView.swift */; };
 		487B5E112C07365C0029EF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487B5E102C07365C0029EF25 /* Assets.xcassets */; };
 		487B5E142C07365C0029EF25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487B5E132C07365C0029EF25 /* Preview Assets.xcassets */; };
+		487B5E1B2C07408D0029EF25 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E1A2C07408D0029EF25 /* NetworkManager.swift */; };
+		487B5E1E2C07459D0029EF25 /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E1D2C07459D0029EF25 /* PhotoItem.swift */; };
+		487B5E212C0751D60029EF25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E202C0751D60029EF25 /* ContentView.swift */; };
+		487B5E272C0752170029EF25 /* PreloaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E262C0752170029EF25 /* PreloaderViewModel.swift */; };
+		487B5E292C07522A0029EF25 /* PreloaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E282C07522A0029EF25 /* PreloaderView.swift */; };
+		487B5E2C2C075D260029EF25 /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E2B2C075D260029EF25 /* MainViewViewModel.swift */; };
+		487B5E2F2C07658E0029EF25 /* PhotoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E2E2C07658E0029EF25 /* PhotoCard.swift */; };
+		487B5E322C076B3F0029EF25 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E312C076B3F0029EF25 /* RemoteImage.swift */; };
+		487B5E342C078E3C0029EF25 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E332C078E3C0029EF25 /* Header.swift */; };
+		487B5E362C0797E50029EF25 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E352C0797E50029EF25 /* FilterModel.swift */; };
+		487B5E382C07990C0029EF25 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E372C07990C0029EF25 /* MockData.swift */; };
+		487B5E3B2C07A0E50029EF25 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E3A2C07A0E50029EF25 /* DatePicker.swift */; };
+		487B5E422C089A990029EF25 /* RoverData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E412C089A990029EF25 /* RoverData.swift */; };
+		487B5E442C089AAE0029EF25 /* CameraData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E432C089AAE0029EF25 /* CameraData.swift */; };
+		487B5E4A2C089BC50029EF25 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E492C089BC50029EF25 /* String+Ext.swift */; };
+		487B5E4C2C089BCD0029EF25 /* Dates+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E4B2C089BCD0029EF25 /* Dates+Ext.swift */; };
+		487B5E4F2C089C6B0029EF25 /* RoversCameras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E4E2C089C6B0029EF25 /* RoversCameras.swift */; };
+		487B5E512C089E5A0029EF25 /* FilterPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E502C089E5A0029EF25 /* FilterPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4828AE5B2C08DA83000A38E9 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		4828AE5E2C08E295000A38E9 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		4828AE612C08E81C000A38E9 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		4828AE672C08EDBF000A38E9 /* FullScreenImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImage.swift; sourceTree = "<group>"; };
+		4828AE6A2C091F84000A38E9 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
+		4828AE6C2C09202E000A38E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4828AE6D2C09234D000A38E9 /* Font+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Ext.swift"; sourceTree = "<group>"; };
 		487B5E092C0736580029EF25 /* MarsPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487B5E0C2C0736580029EF25 /* MarsPhotoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhotoApp.swift; sourceTree = "<group>"; };
-		487B5E0E2C0736580029EF25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		487B5E0E2C0736580029EF25 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		487B5E102C07365C0029EF25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		487B5E132C07365C0029EF25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		487B5E1A2C07408D0029EF25 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		487B5E1D2C07459D0029EF25 /* PhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
+		487B5E202C0751D60029EF25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		487B5E262C0752170029EF25 /* PreloaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderViewModel.swift; sourceTree = "<group>"; };
+		487B5E282C07522A0029EF25 /* PreloaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderView.swift; sourceTree = "<group>"; };
+		487B5E2B2C075D260029EF25 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		487B5E2E2C07658E0029EF25 /* PhotoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCard.swift; sourceTree = "<group>"; };
+		487B5E312C076B3F0029EF25 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		487B5E332C078E3C0029EF25 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		487B5E352C0797E50029EF25 /* FilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
+		487B5E372C07990C0029EF25 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		487B5E3A2C07A0E50029EF25 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
+		487B5E412C089A990029EF25 /* RoverData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverData.swift; sourceTree = "<group>"; };
+		487B5E432C089AAE0029EF25 /* CameraData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraData.swift; sourceTree = "<group>"; };
+		487B5E492C089BC50029EF25 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		487B5E4B2C089BCD0029EF25 /* Dates+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dates+Ext.swift"; sourceTree = "<group>"; };
+		487B5E4E2C089C6B0029EF25 /* RoversCameras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoversCameras.swift; sourceTree = "<group>"; };
+		487B5E502C089E5A0029EF25 /* FilterPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +81,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4828AE5A2C08DA75000A38E9 /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				4828AE5B2C08DA83000A38E9 /* ErrorView.swift */,
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
+		4828AE5D2C08E285000A38E9 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				4828AE5E2C08E295000A38E9 /* LoadingView.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		4828AE602C08E80D000A38E9 /* EmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				4828AE612C08E81C000A38E9 /* EmptyView.swift */,
+			);
+			path = EmptyView;
+			sourceTree = "<group>";
+		};
+		4828AE632C08ED47000A38E9 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				487B5E3A2C07A0E50029EF25 /* DatePicker.swift */,
+				487B5E502C089E5A0029EF25 /* FilterPicker.swift */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		4828AE642C08ED5D000A38E9 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				487B5E332C078E3C0029EF25 /* Header.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		4828AE652C08ED67000A38E9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				487B5E312C076B3F0029EF25 /* RemoteImage.swift */,
+				4828AE672C08EDBF000A38E9 /* FullScreenImage.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		4828AE662C08ED7D000A38E9 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				487B5E2E2C07658E0029EF25 /* PhotoCard.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		4828AE692C091F73000A38E9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4828AE6A2C091F84000A38E9 /* SF-Pro.ttf */,
+				4828AE6D2C09234D000A38E9 /* Font+Ext.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		487B5E002C0736580029EF25 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +167,15 @@
 		487B5E0B2C0736580029EF25 /* MarsPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				4828AE6C2C09202E000A38E9 /* Info.plist */,
+				4828AE692C091F73000A38E9 /* Fonts */,
+				487B5E4D2C089C280029EF25 /* Constants */,
+				487B5E482C089B800029EF25 /* Extensions */,
+				487B5E2D2C07657F0029EF25 /* Views */,
+				487B5E1F2C0751BC0029EF25 /* Screens */,
+				487B5E1C2C07455A0029EF25 /* Model */,
 				487B5E0C2C0736580029EF25 /* MarsPhotoApp.swift */,
-				487B5E0E2C0736580029EF25 /* ContentView.swift */,
+				487B5E1A2C07408D0029EF25 /* NetworkManager.swift */,
 				487B5E102C07365C0029EF25 /* Assets.xcassets */,
 				487B5E122C07365C0029EF25 /* Preview Content */,
 			);
@@ -65,6 +188,85 @@
 				487B5E132C07365C0029EF25 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		487B5E1C2C07455A0029EF25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				487B5E1D2C07459D0029EF25 /* PhotoItem.swift */,
+				487B5E352C0797E50029EF25 /* FilterModel.swift */,
+				487B5E372C07990C0029EF25 /* MockData.swift */,
+				487B5E412C089A990029EF25 /* RoverData.swift */,
+				487B5E432C089AAE0029EF25 /* CameraData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		487B5E1F2C0751BC0029EF25 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4828AE602C08E80D000A38E9 /* EmptyView */,
+				4828AE5D2C08E285000A38E9 /* LoadingView */,
+				4828AE5A2C08DA75000A38E9 /* ErrorView */,
+				487B5E2A2C075D0D0029EF25 /* MainView */,
+				487B5E252C0752030029EF25 /* PreloaderView */,
+				487B5E222C0751E00029EF25 /* ContentView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		487B5E222C0751E00029EF25 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				487B5E202C0751D60029EF25 /* ContentView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		487B5E252C0752030029EF25 /* PreloaderView */ = {
+			isa = PBXGroup;
+			children = (
+				487B5E262C0752170029EF25 /* PreloaderViewModel.swift */,
+				487B5E282C07522A0029EF25 /* PreloaderView.swift */,
+			);
+			path = PreloaderView;
+			sourceTree = "<group>";
+		};
+		487B5E2A2C075D0D0029EF25 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				487B5E0E2C0736580029EF25 /* MainView.swift */,
+				487B5E2B2C075D260029EF25 /* MainViewViewModel.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		487B5E2D2C07657F0029EF25 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4828AE662C08ED7D000A38E9 /* Cards */,
+				4828AE652C08ED67000A38E9 /* Images */,
+				4828AE642C08ED5D000A38E9 /* Header */,
+				4828AE632C08ED47000A38E9 /* Filters */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		487B5E482C089B800029EF25 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				487B5E4B2C089BCD0029EF25 /* Dates+Ext.swift */,
+				487B5E492C089BC50029EF25 /* String+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		487B5E4D2C089C280029EF25 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				487B5E4E2C089C6B0029EF25 /* RoversCameras.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				487B5E142C07365C0029EF25 /* Preview Assets.xcassets in Resources */,
+				4828AE6B2C091F84000A38E9 /* SF-Pro.ttf in Resources */,
 				487B5E112C07365C0029EF25 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +340,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				487B5E0F2C0736580029EF25 /* ContentView.swift in Sources */,
+				487B5E4A2C089BC50029EF25 /* String+Ext.swift in Sources */,
+				487B5E1B2C07408D0029EF25 /* NetworkManager.swift in Sources */,
+				487B5E272C0752170029EF25 /* PreloaderViewModel.swift in Sources */,
+				487B5E2F2C07658E0029EF25 /* PhotoCard.swift in Sources */,
+				4828AE622C08E81C000A38E9 /* EmptyView.swift in Sources */,
+				487B5E2C2C075D260029EF25 /* MainViewViewModel.swift in Sources */,
+				487B5E342C078E3C0029EF25 /* Header.swift in Sources */,
+				487B5E382C07990C0029EF25 /* MockData.swift in Sources */,
+				487B5E322C076B3F0029EF25 /* RemoteImage.swift in Sources */,
+				487B5E212C0751D60029EF25 /* ContentView.swift in Sources */,
+				487B5E512C089E5A0029EF25 /* FilterPicker.swift in Sources */,
+				487B5E4C2C089BCD0029EF25 /* Dates+Ext.swift in Sources */,
+				487B5E0F2C0736580029EF25 /* MainView.swift in Sources */,
+				487B5E442C089AAE0029EF25 /* CameraData.swift in Sources */,
 				487B5E0D2C0736580029EF25 /* MarsPhotoApp.swift in Sources */,
+				487B5E1E2C07459D0029EF25 /* PhotoItem.swift in Sources */,
+				487B5E4F2C089C6B0029EF25 /* RoversCameras.swift in Sources */,
+				487B5E422C089A990029EF25 /* RoverData.swift in Sources */,
+				4828AE6E2C09234D000A38E9 /* Font+Ext.swift in Sources */,
+				487B5E362C0797E50029EF25 /* FilterModel.swift in Sources */,
+				487B5E292C07522A0029EF25 /* PreloaderView.swift in Sources */,
+				487B5E3B2C07A0E50029EF25 /* DatePicker.swift in Sources */,
+				4828AE5C2C08DA83000A38E9 /* ErrorView.swift in Sources */,
+				4828AE682C08EDBF000A38E9 /* FullScreenImage.swift in Sources */,
+				4828AE5F2C08E295000A38E9 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +501,13 @@
 				DEVELOPMENT_TEAM = 8JG294HSXK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarsPhoto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +515,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.kourakh.MarsPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,11 +536,13 @@
 				DEVELOPMENT_TEAM = 8JG294HSXK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarsPhoto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +550,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.kourakh.MarsPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
