@@ -18,7 +18,7 @@ struct FullScreenImage: View {
                     Button {
                         dismiss()
                     } label: {
-                        Image("tick")
+                        Image("close-white")
                             .resizable()
                             .frame(width: 44, height: 44)
                     }
