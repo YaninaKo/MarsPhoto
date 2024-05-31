@@ -13,6 +13,17 @@
 		4828AE682C08EDBF000A38E9 /* FullScreenImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE672C08EDBF000A38E9 /* FullScreenImage.swift */; };
 		4828AE6B2C091F84000A38E9 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4828AE6A2C091F84000A38E9 /* SF-Pro.ttf */; };
 		4828AE6E2C09234D000A38E9 /* Font+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE6D2C09234D000A38E9 /* Font+Ext.swift */; };
+		4828AE722C09EA4A000A38E9 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE712C09EA4A000A38E9 /* HistoryView.swift */; };
+		4828AE742C09EAE7000A38E9 /* HistoryViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE732C09EAE7000A38E9 /* HistoryViewViewModel.swift */; };
+		4828AE762C09EB22000A38E9 /* HistoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE752C09EB22000A38E9 /* HistoryHeader.swift */; };
+		4828AE782C09F07C000A38E9 /* FilterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE772C09F07C000A38E9 /* FilterCard.swift */; };
+		4828AE7D2C09F133000A38E9 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE7C2C09F133000A38E9 /* Modifiers.swift */; };
+		4828AE7F2C09F1A8000A38E9 /* CardText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE7E2C09F1A8000A38E9 /* CardText.swift */; };
+		4828AE812C09FB53000A38E9 /* HistoryContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE802C09FB53000A38E9 /* HistoryContentView.swift */; };
+		4828AE842C09FC22000A38E9 /* MarsPhoto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE822C09FC22000A38E9 /* MarsPhoto.xcdatamodeld */; };
+		4828AE862C09FD6B000A38E9 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE852C09FD6A000A38E9 /* CoreDataManager.swift */; };
+		4828AE892C0A2BC1000A38E9 /* Filter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE882C0A2BC1000A38E9 /* Filter+Ext.swift */; };
+		4828AE8B2C0A2C10000A38E9 /* BaseCoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE8A2C0A2C10000A38E9 /* BaseCoreModel.swift */; };
 		487B5E0D2C0736580029EF25 /* MarsPhotoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E0C2C0736580029EF25 /* MarsPhotoApp.swift */; };
 		487B5E0F2C0736580029EF25 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E0E2C0736580029EF25 /* MainView.swift */; };
 		487B5E112C07365C0029EF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487B5E102C07365C0029EF25 /* Assets.xcassets */; };
@@ -45,6 +56,17 @@
 		4828AE6A2C091F84000A38E9 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
 		4828AE6C2C09202E000A38E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4828AE6D2C09234D000A38E9 /* Font+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Ext.swift"; sourceTree = "<group>"; };
+		4828AE712C09EA4A000A38E9 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		4828AE732C09EAE7000A38E9 /* HistoryViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewViewModel.swift; sourceTree = "<group>"; };
+		4828AE752C09EB22000A38E9 /* HistoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryHeader.swift; sourceTree = "<group>"; };
+		4828AE772C09F07C000A38E9 /* FilterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCard.swift; sourceTree = "<group>"; };
+		4828AE7C2C09F133000A38E9 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		4828AE7E2C09F1A8000A38E9 /* CardText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardText.swift; sourceTree = "<group>"; };
+		4828AE802C09FB53000A38E9 /* HistoryContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryContentView.swift; sourceTree = "<group>"; };
+		4828AE832C09FC22000A38E9 /* MarsPhoto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarsPhoto.xcdatamodel; sourceTree = "<group>"; };
+		4828AE852C09FD6A000A38E9 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		4828AE882C0A2BC1000A38E9 /* Filter+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Filter+Ext.swift"; sourceTree = "<group>"; };
+		4828AE8A2C0A2C10000A38E9 /* BaseCoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoreModel.swift; sourceTree = "<group>"; };
 		487B5E092C0736580029EF25 /* MarsPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487B5E0C2C0736580029EF25 /* MarsPhotoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhotoApp.swift; sourceTree = "<group>"; };
 		487B5E0E2C0736580029EF25 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -114,12 +136,13 @@
 			path = Filters;
 			sourceTree = "<group>";
 		};
-		4828AE642C08ED5D000A38E9 /* Header */ = {
+		4828AE642C08ED5D000A38E9 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
 				487B5E332C078E3C0029EF25 /* Header.swift */,
+				4828AE752C09EB22000A38E9 /* HistoryHeader.swift */,
 			);
-			path = Header;
+			path = Headers;
 			sourceTree = "<group>";
 		};
 		4828AE652C08ED67000A38E9 /* Images */ = {
@@ -135,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				487B5E2E2C07658E0029EF25 /* PhotoCard.swift */,
+				4828AE772C09F07C000A38E9 /* FilterCard.swift */,
+				4828AE7E2C09F1A8000A38E9 /* CardText.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -146,6 +171,57 @@
 				4828AE6D2C09234D000A38E9 /* Font+Ext.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4828AE6F2C09E9B3000A38E9 /* HistoryContentView */ = {
+			isa = PBXGroup;
+			children = (
+				4828AE802C09FB53000A38E9 /* HistoryContentView.swift */,
+			);
+			path = HistoryContentView;
+			sourceTree = "<group>";
+		};
+		4828AE702C09E9CA000A38E9 /* HistoryView */ = {
+			isa = PBXGroup;
+			children = (
+				4828AE712C09EA4A000A38E9 /* HistoryView.swift */,
+				4828AE732C09EAE7000A38E9 /* HistoryViewViewModel.swift */,
+			);
+			path = HistoryView;
+			sourceTree = "<group>";
+		};
+		4828AE792C09F0D1000A38E9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4828AE7B2C09F112000A38E9 /* Modifiers */,
+				4828AE7A2C09F0E7000A38E9 /* Managers */,
+				487B5E482C089B800029EF25 /* Extensions */,
+				487B5E4D2C089C280029EF25 /* Constants */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4828AE7A2C09F0E7000A38E9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				487B5E1A2C07408D0029EF25 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4828AE7B2C09F112000A38E9 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				4828AE7C2C09F133000A38E9 /* Modifiers.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		4828AE872C0A0154000A38E9 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		487B5E002C0736580029EF25 = {
@@ -167,17 +243,17 @@
 		487B5E0B2C0736580029EF25 /* MarsPhoto */ = {
 			isa = PBXGroup;
 			children = (
-				4828AE6C2C09202E000A38E9 /* Info.plist */,
+				4828AE792C09F0D1000A38E9 /* Utilities */,
 				4828AE692C091F73000A38E9 /* Fonts */,
-				487B5E4D2C089C280029EF25 /* Constants */,
-				487B5E482C089B800029EF25 /* Extensions */,
 				487B5E2D2C07657F0029EF25 /* Views */,
 				487B5E1F2C0751BC0029EF25 /* Screens */,
 				487B5E1C2C07455A0029EF25 /* Model */,
 				487B5E0C2C0736580029EF25 /* MarsPhotoApp.swift */,
-				487B5E1A2C07408D0029EF25 /* NetworkManager.swift */,
 				487B5E102C07365C0029EF25 /* Assets.xcassets */,
+				4828AE6C2C09202E000A38E9 /* Info.plist */,
 				487B5E122C07365C0029EF25 /* Preview Content */,
+				4828AE822C09FC22000A38E9 /* MarsPhoto.xcdatamodeld */,
+				4828AE852C09FD6A000A38E9 /* CoreDataManager.swift */,
 			);
 			path = MarsPhoto;
 			sourceTree = "<group>";
@@ -198,6 +274,7 @@
 				487B5E372C07990C0029EF25 /* MockData.swift */,
 				487B5E412C089A990029EF25 /* RoverData.swift */,
 				487B5E432C089AAE0029EF25 /* CameraData.swift */,
+				4828AE8A2C0A2C10000A38E9 /* BaseCoreModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,12 +282,15 @@
 		487B5E1F2C0751BC0029EF25 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				4828AE872C0A0154000A38E9 /* New Group */,
 				4828AE602C08E80D000A38E9 /* EmptyView */,
 				4828AE5D2C08E285000A38E9 /* LoadingView */,
 				4828AE5A2C08DA75000A38E9 /* ErrorView */,
 				487B5E2A2C075D0D0029EF25 /* MainView */,
 				487B5E252C0752030029EF25 /* PreloaderView */,
 				487B5E222C0751E00029EF25 /* ContentView */,
+				4828AE702C09E9CA000A38E9 /* HistoryView */,
+				4828AE6F2C09E9B3000A38E9 /* HistoryContentView */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -246,7 +326,7 @@
 			children = (
 				4828AE662C08ED7D000A38E9 /* Cards */,
 				4828AE652C08ED67000A38E9 /* Images */,
-				4828AE642C08ED5D000A38E9 /* Header */,
+				4828AE642C08ED5D000A38E9 /* Headers */,
 				4828AE632C08ED47000A38E9 /* Filters */,
 			);
 			path = Views;
@@ -257,6 +337,7 @@
 			children = (
 				487B5E4B2C089BCD0029EF25 /* Dates+Ext.swift */,
 				487B5E492C089BC50029EF25 /* String+Ext.swift */,
+				4828AE882C0A2BC1000A38E9 /* Filter+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -344,10 +425,14 @@
 				487B5E1B2C07408D0029EF25 /* NetworkManager.swift in Sources */,
 				487B5E272C0752170029EF25 /* PreloaderViewModel.swift in Sources */,
 				487B5E2F2C07658E0029EF25 /* PhotoCard.swift in Sources */,
+				4828AE7D2C09F133000A38E9 /* Modifiers.swift in Sources */,
 				4828AE622C08E81C000A38E9 /* EmptyView.swift in Sources */,
 				487B5E2C2C075D260029EF25 /* MainViewViewModel.swift in Sources */,
+				4828AE862C09FD6B000A38E9 /* CoreDataManager.swift in Sources */,
 				487B5E342C078E3C0029EF25 /* Header.swift in Sources */,
+				4828AE742C09EAE7000A38E9 /* HistoryViewViewModel.swift in Sources */,
 				487B5E382C07990C0029EF25 /* MockData.swift in Sources */,
+				4828AE8B2C0A2C10000A38E9 /* BaseCoreModel.swift in Sources */,
 				487B5E322C076B3F0029EF25 /* RemoteImage.swift in Sources */,
 				487B5E212C0751D60029EF25 /* ContentView.swift in Sources */,
 				487B5E512C089E5A0029EF25 /* FilterPicker.swift in Sources */,
@@ -355,14 +440,21 @@
 				487B5E0F2C0736580029EF25 /* MainView.swift in Sources */,
 				487B5E442C089AAE0029EF25 /* CameraData.swift in Sources */,
 				487B5E0D2C0736580029EF25 /* MarsPhotoApp.swift in Sources */,
+				4828AE782C09F07C000A38E9 /* FilterCard.swift in Sources */,
 				487B5E1E2C07459D0029EF25 /* PhotoItem.swift in Sources */,
 				487B5E4F2C089C6B0029EF25 /* RoversCameras.swift in Sources */,
+				4828AE722C09EA4A000A38E9 /* HistoryView.swift in Sources */,
+				4828AE842C09FC22000A38E9 /* MarsPhoto.xcdatamodeld in Sources */,
 				487B5E422C089A990029EF25 /* RoverData.swift in Sources */,
 				4828AE6E2C09234D000A38E9 /* Font+Ext.swift in Sources */,
+				4828AE762C09EB22000A38E9 /* HistoryHeader.swift in Sources */,
+				4828AE892C0A2BC1000A38E9 /* Filter+Ext.swift in Sources */,
 				487B5E362C0797E50029EF25 /* FilterModel.swift in Sources */,
 				487B5E292C07522A0029EF25 /* PreloaderView.swift in Sources */,
 				487B5E3B2C07A0E50029EF25 /* DatePicker.swift in Sources */,
+				4828AE812C09FB53000A38E9 /* HistoryContentView.swift in Sources */,
 				4828AE5C2C08DA83000A38E9 /* ErrorView.swift in Sources */,
+				4828AE7F2C09F1A8000A38E9 /* CardText.swift in Sources */,
 				4828AE682C08EDBF000A38E9 /* FullScreenImage.swift in Sources */,
 				4828AE5F2C08E295000A38E9 /* LoadingView.swift in Sources */,
 			);
@@ -582,6 +674,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4828AE822C09FC22000A38E9 /* MarsPhoto.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4828AE832C09FC22000A38E9 /* MarsPhoto.xcdatamodel */,
+			);
+			currentVersion = 4828AE832C09FC22000A38E9 /* MarsPhoto.xcdatamodel */;
+			name = MarsPhoto.xcdatamodeld;
+			path = /Users/yaninakovrakh/Documents/study/ios/test.nosync/MarsPhoto/MarsPhoto/MarsPhoto.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 487B5E012C0736580029EF25 /* Project object */;
 }

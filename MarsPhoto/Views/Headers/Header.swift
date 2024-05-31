@@ -65,7 +65,7 @@ struct Header: View {
                     Spacer(minLength: 23)
 
                     Button {
-                        print("add button tapped")
+                        mainViewModel.saveFilter()
                     } label: {
                         Image("add")
                     }
@@ -104,5 +104,5 @@ struct FilterButtonStyle: ViewModifier {
 }
 
 #Preview {
-    Header(mainViewModel: MainViewViewModel(), isOverlayPresented: .constant(false), isFilterPickerPresented: .constant(false), filtertype: .constant(.camera))
+    Header(mainViewModel: MainViewViewModel(context: MockData.viewContext), isOverlayPresented: .constant(false), isFilterPickerPresented: .constant(false), filtertype: .constant(.camera))
 }

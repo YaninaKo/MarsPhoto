@@ -15,13 +15,11 @@ struct PhotoCard: View {
 
     var body: some View {
         HStack(alignment: .center, spacing: 10) {
-            VStack(alignment: .leading, spacing: 6) {
-                CardText(title: "Rover:", name: photoItem.roverName)
-                CardText(title: "Camera:", name: photoItem.cameraFullName)
-                CardText(title: "Date:", name: photoItem.earthDate)
-            }
-
-            .frame(maxWidth: .infinity, alignment: .leading)
+            CardText(
+                roverName: photoItem.roverName,
+                cameraName: photoItem.cameraFullName,
+                earthDate: photoItem.earthDate)
+                .frame(maxWidth: .infinity, alignment: .leading)
 
             PhotoCardRemoteImage(urlString: photoItem.imageSrc)
                 .aspectRatio(contentMode: .fit)
@@ -29,10 +27,7 @@ struct PhotoCard: View {
                 .clipShape(RoundedRectangle(cornerRadius: 20))
         }
         .padding(10)
-        .background(RoundedRectangle(cornerRadius: 30)
-            .fill(Color.backgroundOne)
-            .shadow(color: Color.black.opacity(0.4), radius: 16, x: 0, y: 3)
-        )
+        .modifier(cardBackground())
         .onTapGesture {
             isFullScreenImagePresented = true
         }
@@ -42,15 +37,7 @@ struct PhotoCard: View {
     }
 }
 
-struct CardText: View {
-    let title: String
-    let name: String
 
-    var body: some View {
-        Text(title).sfPro(.body).foregroundStyle(Color.layerTwo) + Text(" ") +
-        Text(name).sfPro(.body2).foregroundStyle(Color.layerOne).bold()
-    }
-}
 
 #Preview {
     PhotoCard(photoItem: MockData.samplePhotoItem)

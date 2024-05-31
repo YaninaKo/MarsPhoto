@@ -18,9 +18,7 @@ struct ContentView: View {
         ScrollView {
             LazyVGrid(columns: columns) {
                 ForEach(photoItems, id: \.id) { item in
-                    return PhotoCard(photoItem: item) {
-                        print("card was tapped")
-                    }
+                    return PhotoCard(photoItem: item)
                 }
             }
             .padding(20)

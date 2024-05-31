@@ -16,5 +16,7 @@ struct MockData {
 
     static let photoItems = [samplePhotoItem, samplePhotoItem2, samplePhotoItem3, samplePhotoItem4]
 
-    static let filterModel = FilterModel(rover: "Curiosity", camera: "FHAZ", date: "2015-6-3")
+    static let filterModel = FilterModel(rover: "curiosity", camera: "fhaz", date: "2015-6-3")
+
+    static let viewContext = CoreDataManager.shared.persistentStoreContainer.viewContext
 }

@@ -11,7 +11,11 @@ import SwiftUI
 struct MarsPhotoApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+
+            let viewContext = CoreDataManager.shared.persistentStoreContainer.viewContext
+
+            MainView(viewModel: MainViewViewModel(context: viewContext))
+                .environment(\.managedObjectContext, viewContext)
         }
     }
 }

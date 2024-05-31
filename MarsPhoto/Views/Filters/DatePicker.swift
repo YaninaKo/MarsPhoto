@@ -54,5 +54,5 @@ struct ModalDatePicker: View {
 }
 
 #Preview {
-    ModalDatePicker(isPresented: .constant(true), selectedDate: Date(), mainViewModel: MainViewViewModel())
+    ModalDatePicker(isPresented: .constant(true), selectedDate: Date(), mainViewModel: MainViewViewModel(context: MockData.viewContext))
 }

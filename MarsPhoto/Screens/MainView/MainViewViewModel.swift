@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 
 enum ScreenState {
     case initial
@@ -17,10 +18,33 @@ enum ScreenState {
 
 final class MainViewViewModel: ObservableObject {
 
+    @Published var savedFilters: [Filter] = []
+
     @Published var screenState: ScreenState = .initial
     private let networkManager = NetworkManager.shared
-    var filter = FilterModel(rover: "curiosity", camera: "fhaz", date: "2015-6-3")
-    var filtersList = [String]()
+    @Published var filter = FilterModel(rover: "curiosity", camera: "fhaz", date: "2015-6-3")
+
+    private (set) var context: NSManagedObjectContext
+
+    init(context: NSManagedObjectContext) {
+        self.context = context
+    }
+
+    func saveFilter() {
+        do {
+            let newFilter = Filter(context: context)
+            newFilter.id = filter.id
+            newFilter.rover = filter.rover
+            newFilter.camera = filter.camera
+            newFilter.date = filter.date
+            try newFilter.save()
+            print("Saved filter: \(filter.camera)")
+        } catch {
+            print("Failed to save filter to Core Data.")
+        }
+
+
+    }
 
     @MainActor
     func loadPhotos() {
@@ -79,6 +103,11 @@ final class MainViewViewModel: ObservableObject {
         }
         print("camera changed")
         filter.camera = currentCameraId
+        loadPhotos()
+    }
+
+    @MainActor
+    func onFilterChanged() {
         loadPhotos()
     }
 

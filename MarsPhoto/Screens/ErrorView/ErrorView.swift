@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ErrorView: View {
 
-    @ObservedObject var viewModel: MainViewViewModel
+    var onRefresh: (() -> Void)
 
     var body: some View {
         VStack(alignment: .center) {
             Text("Error!")
             Text("Please try again")
             Button {
-                viewModel.loadPhotos()
+                onRefresh()
             } label: {
                 Image(systemName: "arrow.clockwise.circle")
                     .resizable()
@@ -29,5 +29,7 @@ struct ErrorView: View {
 }
 
 #Preview {
-    ErrorView(viewModel: MainViewViewModel())
+    ErrorView(onRefresh: {
+        print("Refresh was tapped")
+    })
 }

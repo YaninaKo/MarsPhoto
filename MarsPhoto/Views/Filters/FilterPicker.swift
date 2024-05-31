@@ -38,8 +38,10 @@ struct FilterPicker: View {
                     switch filterType {
                     case .rover:
                         mainViewModel.onRoverChanged(rover: selectedFilter)
+                        filtersList.removeAll()
                     case .camera:
                         mainViewModel.onCameraChanged(camera: selectedFilter)
+                        filtersList.removeAll()
                     }
                     withAnimation {
                         isPresented = false
@@ -63,7 +65,6 @@ struct FilterPicker: View {
                     if filtersList.isEmpty {
                             filtersList = filterType == .rover ? mainViewModel.getRoversList() : mainViewModel.getCamerasList()
                         }
-                    print("On appear")
                     setSelectedFilter()
                 }
 
@@ -93,5 +94,5 @@ struct FilterPicker: View {
 }
 
 #Preview {
-    FilterPicker(mainViewModel: MainViewViewModel(), isPresented: .constant(true), filterType: .constant(.camera))
+    FilterPicker(mainViewModel: MainViewViewModel(context: MockData.viewContext), isPresented: .constant(true), filterType: .constant(.camera))
 }
