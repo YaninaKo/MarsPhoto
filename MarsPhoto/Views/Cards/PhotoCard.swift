@@ -12,7 +12,6 @@ struct PhotoCard: View {
     var onTap: (() -> Void)?
     @State private var isFullScreenImagePresented = false
 
-
     var body: some View {
         HStack(alignment: .center, spacing: 10) {
             CardText(
@@ -36,8 +35,6 @@ struct PhotoCard: View {
         })
     }
 }
-
-
 
 #Preview {
     PhotoCard(photoItem: MockData.samplePhotoItem)

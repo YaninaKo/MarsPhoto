@@ -52,7 +52,7 @@ struct FilterPicker: View {
                         .frame(width: 44, height: 44)
                 }
             }
-            
+
             Picker(
                 filterType == .rover ? "Rover" : "Camera",
                 selection: $selectedFilter) {
@@ -63,8 +63,8 @@ struct FilterPicker: View {
                 .pickerStyle(.wheel)
                 .onAppear() {
                     if filtersList.isEmpty {
-                            filtersList = filterType == .rover ? mainViewModel.getRoversList() : mainViewModel.getCamerasList()
-                        }
+                        filtersList = filterType == .rover ? mainViewModel.getRoversList() : mainViewModel.getCamerasList()
+                    }
                     setSelectedFilter()
                 }
 

@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct Header: View {
-
+    
     @ObservedObject var mainViewModel: MainViewViewModel
     @Binding var isOverlayPresented: Bool
     @Binding var isFilterPickerPresented: Bool
     @Binding var filtertype: FilterType
     @State private var showingAlert = false
-
+    
     var body: some View {
         ZStack {
             Color(Color.accentOne).ignoresSafeArea(.all, edges: .top)
@@ -26,16 +26,16 @@ struct Header: View {
                         Text(mainViewModel.filter.date.convertToMonthDayYearString() ?? "")
                             .sfPro(.body2)
                     }
-
+                    
                     Spacer()
-
+                    
                     Button {
                         isOverlayPresented.toggle()
                     } label: {
                         Image("calendar")
                     }
                 }
-
+                
                 HStack() {
                     Button {
                         filtertype = .rover
@@ -47,9 +47,9 @@ struct Header: View {
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .modifier(FilterButtonStyle())
-
+                    
                     Spacer(minLength: 12)
-
+                    
                     Button {
                         filtertype = .camera
                         withAnimation {
@@ -60,9 +60,9 @@ struct Header: View {
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .modifier(FilterButtonStyle())
-
+                    
                     Spacer(minLength: 23)
-
+                    
                     Button {
                         showingAlert = true
                     } label: {
@@ -79,7 +79,7 @@ struct Header: View {
                 }
             }
             .padding([.horizontal, .bottom], 20)
-
+            
         }
     }
 }
@@ -87,7 +87,7 @@ struct Header: View {
 struct FilterButton: View {
     let name: String
     let title: String
-
+    
     var body: some View {
         Image(name)
             .resizable()

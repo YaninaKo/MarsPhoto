@@ -18,11 +18,11 @@ extension BaseCoreModel where Self: NSManagedObject {
     static var viewContext: NSManagedObjectContext {
         CoreDataManager.shared.persistentStoreContainer.viewContext
     }
-
+    
     func save() throws {
         try Self.viewContext.save()
     }
-
+    
     func delete() throws {
         Self.viewContext.delete(self)
         try save()

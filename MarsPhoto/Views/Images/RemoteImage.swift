@@ -33,7 +33,6 @@ final class ImageLoader: ObservableObject {
 }
 
 struct RemoteImage: View {
-
     var image: Image?
 
     var body: some View {
@@ -42,7 +41,6 @@ struct RemoteImage: View {
 }
 
 struct PhotoCardRemoteImage: View {
-
     @StateObject var imageLoader = ImageLoader()
     let urlString: String
 

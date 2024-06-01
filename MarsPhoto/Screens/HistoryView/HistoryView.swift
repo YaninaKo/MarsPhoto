@@ -30,7 +30,3 @@ struct HistoryView: View {
         }.navigationBarBackButtonHidden(true)
     }
 }
-
-//#Preview {
-//    HistoryView(viewModel: HistoryViewViewModel(context: MockData.viewContext))
-//}

@@ -27,7 +27,3 @@ struct HistoryContentView: View {
         }
     }
 }
-
-//#Preview {
-//    HistoryContentView()
-//}

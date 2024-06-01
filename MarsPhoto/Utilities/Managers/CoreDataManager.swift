@@ -9,7 +9,7 @@ import CoreData
 import Foundation
 
 class CoreDataManager {
-    
+
     let persistentStoreContainer: NSPersistentContainer
     static let shared = CoreDataManager()
 

@@ -9,7 +9,7 @@ import SwiftUI
 
 extension Text {
     func sfPro(_ style: SFProStyle) -> Text {
-        var modifiedText = self // Create a modifiable Text view
+        var modifiedText = self
 
         switch style {
         case .largeTitle:
@@ -32,7 +32,7 @@ extension Text {
             .font(.custom("SF Pro", size: 16))
         }
 
-        return modifiedText // Return the final styled Text view
+        return modifiedText
       }
 }
 

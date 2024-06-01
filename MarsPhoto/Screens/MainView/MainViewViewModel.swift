@@ -19,12 +19,12 @@ enum ScreenState {
 final class MainViewViewModel: ObservableObject {
 
     @Published var savedFilters: [Filter] = []
-
     @Published var screenState: ScreenState = .initial
-    private let networkManager = NetworkManager.shared
     @Published var filter = FilterModel(rover: "curiosity", camera: "fhaz", date: "2015-6-3")
 
+    private let networkManager = NetworkManager.shared
     private (set) var context: NSManagedObjectContext
+    private var isFirstLoading = true
 
     init(context: NSManagedObjectContext) {
         self.context = context
@@ -45,8 +45,13 @@ final class MainViewViewModel: ObservableObject {
 
     @MainActor
     func loadPhotos() {
-        screenState = .loading
-        print("Selected filter: \(filter.rover) \(filter.camera) \(filter.date)")
+        if isFirstLoading {
+            screenState = .initial
+            isFirstLoading = false
+        } else {
+            screenState = .loading
+        }
+
         Task {
             do {
                 let photos = try await self.networkManager.fetchPhotos(roverName: filter.rover, roverCamera: filter.camera, earthDate: filter.date)
@@ -135,11 +140,11 @@ final class MainViewViewModel: ObservableObject {
     func getCameraById(_ cameraId: String) -> String {
         for rover in RoversCameras.rovers {
             for camera in rover.cameras {
-              if camera.id == cameraId {
-                return camera.fullName
-              }
+                if camera.id == cameraId {
+                    return camera.fullName
+                }
             }
-          }
+        }
         return "all"
     }
 }

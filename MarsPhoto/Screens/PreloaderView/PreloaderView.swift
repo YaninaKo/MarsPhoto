@@ -9,7 +9,21 @@ import SwiftUI
 
 struct PreloaderView: View {
     var body: some View {
-        Text("Preloader view")
+        ZStack {
+            Color.backgroundOne.ignoresSafeArea()
+            RoundedRectangle(cornerRadius: 30)
+                .fill(Color.accentOne)
+                .frame(width: 123, height: 123)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 30)
+                        .stroke(Color.black, lineWidth: 1)
+                )
+            VStack {
+                Spacer()
+                LottieView(fileName: "loader")
+                    .frame(height: 200)
+            }
+        }
     }
 }
 

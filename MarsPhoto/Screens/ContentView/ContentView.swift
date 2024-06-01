@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    
     let photoItems: [PhotoItem]
-
     let columns = [GridItem(.flexible(), spacing: 12)]
-
 
     var body: some View {
         ScrollView {

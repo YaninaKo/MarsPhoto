@@ -24,6 +24,9 @@
 		4828AE862C09FD6B000A38E9 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE852C09FD6A000A38E9 /* CoreDataManager.swift */; };
 		4828AE892C0A2BC1000A38E9 /* Filter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE882C0A2BC1000A38E9 /* Filter+Ext.swift */; };
 		4828AE8B2C0A2C10000A38E9 /* BaseCoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE8A2C0A2C10000A38E9 /* BaseCoreModel.swift */; };
+		4828AE8E2C0B3B6A000A38E9 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 4828AE8D2C0B3B6A000A38E9 /* Lottie */; };
+		4828AE912C0B3B8F000A38E9 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 4828AE902C0B3B8F000A38E9 /* loader.json */; };
+		4828AE932C0B3C78000A38E9 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828AE922C0B3C78000A38E9 /* LottieView.swift */; };
 		487B5E0D2C0736580029EF25 /* MarsPhotoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E0C2C0736580029EF25 /* MarsPhotoApp.swift */; };
 		487B5E0F2C0736580029EF25 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E0E2C0736580029EF25 /* MainView.swift */; };
 		487B5E112C07365C0029EF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487B5E102C07365C0029EF25 /* Assets.xcassets */; };
@@ -31,7 +34,6 @@
 		487B5E1B2C07408D0029EF25 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E1A2C07408D0029EF25 /* NetworkManager.swift */; };
 		487B5E1E2C07459D0029EF25 /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E1D2C07459D0029EF25 /* PhotoItem.swift */; };
 		487B5E212C0751D60029EF25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E202C0751D60029EF25 /* ContentView.swift */; };
-		487B5E272C0752170029EF25 /* PreloaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E262C0752170029EF25 /* PreloaderViewModel.swift */; };
 		487B5E292C07522A0029EF25 /* PreloaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E282C07522A0029EF25 /* PreloaderView.swift */; };
 		487B5E2C2C075D260029EF25 /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E2B2C075D260029EF25 /* MainViewViewModel.swift */; };
 		487B5E2F2C07658E0029EF25 /* PhotoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B5E2E2C07658E0029EF25 /* PhotoCard.swift */; };
@@ -67,6 +69,8 @@
 		4828AE852C09FD6A000A38E9 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		4828AE882C0A2BC1000A38E9 /* Filter+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Filter+Ext.swift"; sourceTree = "<group>"; };
 		4828AE8A2C0A2C10000A38E9 /* BaseCoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoreModel.swift; sourceTree = "<group>"; };
+		4828AE902C0B3B8F000A38E9 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
+		4828AE922C0B3C78000A38E9 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		487B5E092C0736580029EF25 /* MarsPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487B5E0C2C0736580029EF25 /* MarsPhotoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhotoApp.swift; sourceTree = "<group>"; };
 		487B5E0E2C0736580029EF25 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -75,7 +79,6 @@
 		487B5E1A2C07408D0029EF25 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		487B5E1D2C07459D0029EF25 /* PhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
 		487B5E202C0751D60029EF25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		487B5E262C0752170029EF25 /* PreloaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderViewModel.swift; sourceTree = "<group>"; };
 		487B5E282C07522A0029EF25 /* PreloaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderView.swift; sourceTree = "<group>"; };
 		487B5E2B2C075D260029EF25 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
 		487B5E2E2C07658E0029EF25 /* PhotoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCard.swift; sourceTree = "<group>"; };
@@ -97,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4828AE8E2C0B3B6A000A38E9 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +197,8 @@
 		4828AE792C09F0D1000A38E9 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				4828AE8F2C0B3B76000A38E9 /* Lottie */,
+				4828AE692C091F73000A38E9 /* Fonts */,
 				4828AE7B2C09F112000A38E9 /* Modifiers */,
 				4828AE7A2C09F0E7000A38E9 /* Managers */,
 				487B5E482C089B800029EF25 /* Extensions */,
@@ -204,6 +210,7 @@
 		4828AE7A2C09F0E7000A38E9 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				4828AE852C09FD6A000A38E9 /* CoreDataManager.swift */,
 				487B5E1A2C07408D0029EF25 /* NetworkManager.swift */,
 			);
 			path = Managers;
@@ -217,11 +224,12 @@
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
-		4828AE872C0A0154000A38E9 /* New Group */ = {
+		4828AE8F2C0B3B76000A38E9 /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
+				4828AE902C0B3B8F000A38E9 /* loader.json */,
 			);
-			path = "New Group";
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 		487B5E002C0736580029EF25 = {
@@ -244,7 +252,6 @@
 			isa = PBXGroup;
 			children = (
 				4828AE792C09F0D1000A38E9 /* Utilities */,
-				4828AE692C091F73000A38E9 /* Fonts */,
 				487B5E2D2C07657F0029EF25 /* Views */,
 				487B5E1F2C0751BC0029EF25 /* Screens */,
 				487B5E1C2C07455A0029EF25 /* Model */,
@@ -253,7 +260,6 @@
 				4828AE6C2C09202E000A38E9 /* Info.plist */,
 				487B5E122C07365C0029EF25 /* Preview Content */,
 				4828AE822C09FC22000A38E9 /* MarsPhoto.xcdatamodeld */,
-				4828AE852C09FD6A000A38E9 /* CoreDataManager.swift */,
 			);
 			path = MarsPhoto;
 			sourceTree = "<group>";
@@ -282,7 +288,6 @@
 		487B5E1F2C0751BC0029EF25 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				4828AE872C0A0154000A38E9 /* New Group */,
 				4828AE602C08E80D000A38E9 /* EmptyView */,
 				4828AE5D2C08E285000A38E9 /* LoadingView */,
 				4828AE5A2C08DA75000A38E9 /* ErrorView */,
@@ -306,8 +311,8 @@
 		487B5E252C0752030029EF25 /* PreloaderView */ = {
 			isa = PBXGroup;
 			children = (
-				487B5E262C0752170029EF25 /* PreloaderViewModel.swift */,
 				487B5E282C07522A0029EF25 /* PreloaderView.swift */,
+				4828AE922C0B3C78000A38E9 /* LottieView.swift */,
 			);
 			path = PreloaderView;
 			sourceTree = "<group>";
@@ -366,6 +371,9 @@
 			dependencies = (
 			);
 			name = MarsPhoto;
+			packageProductDependencies = (
+				4828AE8D2C0B3B6A000A38E9 /* Lottie */,
+			);
 			productName = MarsPhoto;
 			productReference = 487B5E092C0736580029EF25 /* MarsPhoto.app */;
 			productType = "com.apple.product-type.application";
@@ -394,6 +402,9 @@
 				Base,
 			);
 			mainGroup = 487B5E002C0736580029EF25;
+			packageReferences = (
+				4828AE8C2C0B3B69000A38E9 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 487B5E0A2C0736580029EF25 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -410,6 +421,7 @@
 			files = (
 				487B5E142C07365C0029EF25 /* Preview Assets.xcassets in Resources */,
 				4828AE6B2C091F84000A38E9 /* SF-Pro.ttf in Resources */,
+				4828AE912C0B3B8F000A38E9 /* loader.json in Resources */,
 				487B5E112C07365C0029EF25 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,7 +435,6 @@
 			files = (
 				487B5E4A2C089BC50029EF25 /* String+Ext.swift in Sources */,
 				487B5E1B2C07408D0029EF25 /* NetworkManager.swift in Sources */,
-				487B5E272C0752170029EF25 /* PreloaderViewModel.swift in Sources */,
 				487B5E2F2C07658E0029EF25 /* PhotoCard.swift in Sources */,
 				4828AE7D2C09F133000A38E9 /* Modifiers.swift in Sources */,
 				4828AE622C08E81C000A38E9 /* EmptyView.swift in Sources */,
@@ -449,6 +460,7 @@
 				4828AE6E2C09234D000A38E9 /* Font+Ext.swift in Sources */,
 				4828AE762C09EB22000A38E9 /* HistoryHeader.swift in Sources */,
 				4828AE892C0A2BC1000A38E9 /* Filter+Ext.swift in Sources */,
+				4828AE932C0B3C78000A38E9 /* LottieView.swift in Sources */,
 				487B5E362C0797E50029EF25 /* FilterModel.swift in Sources */,
 				487B5E292C07522A0029EF25 /* PreloaderView.swift in Sources */,
 				487B5E3B2C07A0E50029EF25 /* DatePicker.swift in Sources */,
@@ -596,7 +608,7 @@
 				INFOPLIST_FILE = MarsPhoto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
@@ -631,7 +643,7 @@
 				INFOPLIST_FILE = MarsPhoto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
@@ -674,6 +686,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4828AE8C2C0B3B69000A38E9 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4828AE8D2C0B3B6A000A38E9 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4828AE8C2C0B3B69000A38E9 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4828AE822C09FC22000A38E9 /* MarsPhoto.xcdatamodeld */ = {

@@ -13,7 +13,7 @@ class FilterModel: Identifiable {
     var rover: String
     var camera: String
     var date: String
-
+    
     init(id: UUID? = nil, rover: String, camera: String, date: String) {
         self.id = id ?? UUID()
         self.rover = rover
@@ -24,19 +24,19 @@ class FilterModel: Identifiable {
 
 struct FilterViewModel: Identifiable {
     private var filter: Filter
-
+    
     init(filter: Filter) {
         self.filter = filter
     }
-
+    
     var id: NSManagedObjectID {
         filter.objectID
     }
-
+    
     var roverFullName: String {
         RoversCameras.rovers.first(where: { $0.id == filter.rover ?? "" })?.name ?? (filter.rover ?? "")
     }
-
+    
     var cameraFullName: String {
         RoversCameras.rovers
             .first(where: { $0.id == filter.rover ?? "" })?
@@ -44,11 +44,11 @@ struct FilterViewModel: Identifiable {
             .first(where: { $0.id == filter.camera ?? "" })?
             .fullName ?? (filter.camera ?? "")
     }
-
+    
     var dateFormatted: String {
         filter.date?.convertToMonthDayYearString() ?? ""
     }
-
+    
     var filterModel: FilterModel {
         FilterModel(id: filter.id, rover: filter.rover ?? "", camera: filter.camera ?? "", date: filter.date ?? "")
     }
