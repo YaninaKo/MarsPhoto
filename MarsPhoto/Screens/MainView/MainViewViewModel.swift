@@ -69,13 +69,10 @@ final class MainViewViewModel: ObservableObject {
 
     @MainActor func onDateChanged(date: String) {
         filter.date = date
-        print("date changed")
         loadPhotos()
     }
 
     @MainActor func onRoverChanged(rover: String) {
-        print("selected rover: \(rover)")
-
         if let selectedRoverId = RoversCameras.rovers.first(where: { $0.name == rover })?.id {
             filter.rover = selectedRoverId
         } else {
@@ -104,7 +101,7 @@ final class MainViewViewModel: ObservableObject {
             print("There is no such camera.")
             return
         }
-        print("camera changed")
+
         filter.camera = currentCameraId
         loadPhotos()
     }
@@ -116,7 +113,6 @@ final class MainViewViewModel: ObservableObject {
 
     func getRoversList() -> [String] {
         let roversList =  RoversCameras.rovers.map{ $0.name }
-        print("Rovers list: \(roversList)")
         return roversList
     }
 

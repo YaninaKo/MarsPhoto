@@ -36,8 +36,6 @@ final class NetworkManager {
           "\(roverCamera)" +
           "&api_key=\(apiKey)"
 
-        print(urlString)
-
         guard let url = URL(string: urlString) else {
             throw RequestError.invalidURL
         }
