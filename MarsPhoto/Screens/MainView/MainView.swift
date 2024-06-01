@@ -66,13 +66,13 @@ struct MainView: View {
                         Spacer()
                         Button {
                             navigationPath.append("history")
-                            print("History button clicked")
                         } label: {
                             Image("history")
                                 .resizable()
                                 .frame(width: 44, height: 44)
                                 .padding(26)
-                                .background(Circle().foregroundStyle(Color.accentOne).frame(width: 70, height: 70))
+                                .background(Circle().foregroundStyle(Color.accentOne)
+                                .frame(width: 70, height: 70))
                         }
                     }
                 }
@@ -83,7 +83,6 @@ struct MainView: View {
                         selectedDate: Date(),
                         mainViewModel: viewModel)
                 }
-
             }
             .overlay(alignment: .bottom) {
                 if isFilterPickerPresented {
@@ -91,7 +90,6 @@ struct MainView: View {
                         mainViewModel: viewModel,
                         isPresented: $isFilterPickerPresented,
                         filterType: $filterType)
-
                 }
             }
             .ignoresSafeArea(.all, edges: .bottom)
@@ -100,7 +98,10 @@ struct MainView: View {
             }
             .navigationDestination(for: String.self) { destination in
                 if destination == "history" {
-                    HistoryView(viewModel: HistoryViewViewModel(context: viewContext, selectedFilter: viewModel.filter))
+                    HistoryView(viewModel: HistoryViewViewModel(
+                        context: viewContext,
+                        selectedFilter: $viewModel.filter,
+                        navigationPath: $navigationPath))
                 }
             }
         }

@@ -13,6 +13,7 @@ struct Header: View {
     @Binding var isOverlayPresented: Bool
     @Binding var isFilterPickerPresented: Bool
     @Binding var filtertype: FilterType
+    @State private var showingAlert = false
 
     var body: some View {
         ZStack {
@@ -37,7 +38,6 @@ struct Header: View {
 
                 HStack() {
                     Button {
-                        print("rover filter tapped")
                         filtertype = .rover
                         withAnimation {
                             isFilterPickerPresented.toggle()
@@ -51,7 +51,6 @@ struct Header: View {
                     Spacer(minLength: 12)
 
                     Button {
-                        print("camera filter tapped")
                         filtertype = .camera
                         withAnimation {
                             isFilterPickerPresented.toggle()
@@ -65,9 +64,16 @@ struct Header: View {
                     Spacer(minLength: 23)
 
                     Button {
-                        mainViewModel.saveFilter()
+                        showingAlert = true
                     } label: {
                         Image("add")
+                    }
+                    .alert("Save Filters", isPresented: $showingAlert) {
+                        Button("Save") { mainViewModel.saveFilter() }
+                        Button("Cancel", role: .cancel) { }
+                        
+                    } message: {
+                        Text("The current filters and the date you have chosen can be saved to the filter history.")
                     }
                     .modifier(FilterButtonStyle())
                 }

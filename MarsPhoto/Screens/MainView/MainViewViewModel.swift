@@ -38,17 +38,15 @@ final class MainViewViewModel: ObservableObject {
             newFilter.camera = filter.camera
             newFilter.date = filter.date
             try newFilter.save()
-            print("Saved filter: \(filter.camera)")
         } catch {
             print("Failed to save filter to Core Data.")
         }
-
-
     }
 
     @MainActor
     func loadPhotos() {
         screenState = .loading
+        print("Selected filter: \(filter.rover) \(filter.camera) \(filter.date)")
         Task {
             do {
                 let photos = try await self.networkManager.fetchPhotos(roverName: filter.rover, roverCamera: filter.camera, earthDate: filter.date)
